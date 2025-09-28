@@ -1,64 +1,64 @@
-site_name: accounts-metrics-dashboard
-repo_url: https://github.com/rock-hu/accounts-metrics-dashboard
-repo_name: github.com/rock-hu
-site_dir: public
+---
+site_name: "accounts-metrics-dashboard"
+repo_url: "https://github.com/rock-hu/accounts-metrics-dashboard"
+repo_name: "github.com/rock-hu"
+site_dir: "public"
 theme:
-  name: material
+  name: "material"
   include_search_page: false
   search_index_only: true
-  language: en
+  language: "en"
   highlightjs: true
   hljs_languages:
-    - yaml
-    - rust
+  - "yaml"
+  - "rust"
   features:
-    - navigation.instant
-    - navigation.expand
-    - navigation.indexes
+  - "navigation.instant"
+  - "navigation.expand"
+  - "navigation.indexes"
 nav:
-  - index.md
-  - mkdocs.md
-  - account-access-consents-services.md
-  - accounts-gateway.md
-  - accounts-services.md
-  - balances-services.md
-  - beneficiaries-services.md
-  - direct-debits-services.md
-  - offers-services.md
-  - parties-services.md
-  - products-services.md
-  - scheduled-payments-services.md
-  - standing-orders-services.md
-  - statements-services.md
-  - transactions-services.md
-
+- "index.md"
+- "mkdocs.md"
+- "account-access-consents-services.md"
+- "accounts-gateway.md"
+- "accounts-services.md"
+- "balances-services.md"
+- "beneficiaries-services.md"
+- "direct-debits-services.md"
+- "offers-services.md"
+- "parties-services.md"
+- "products-services.md"
+- "scheduled-payments-services.md"
+- "standing-orders-services.md"
+- "statements-services.md"
+- "transactions-services.md"
 plugins:
-  - search
-  - git-revision-date
-  - git-authors
-  - git-revision-date-localized:
-      type: date
-  - table-reader
+- "search"
+- "git-revision-date"
+- "git-authors"
+- git-revision-date-localized:
+    type: "date"
+- "table-reader"
 extra:
   version:
-    method: mike
+    method: "mike"
 extra_css:
-  - stylesheets/extra.css
+- "stylesheets/extra.css"
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - javascripts/tables.js
+- "https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"
+- "javascripts/tables.js"
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.smartsymbols
-  - admonition
-  - tables
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+- "pymdownx.highlight"
+- "pymdownx.superfences"
+- "pymdownx.critic"
+- "pymdownx.caret"
+- "pymdownx.mark"
+- "pymdownx.tilde"
+- "pymdownx.smartsymbols"
+- "admonition"
+- "tables"
+- pymdownx.superfences:
+    custom_fences:
+    - name: "mermaid"
+      class: "mermaid"
+      format: ""
