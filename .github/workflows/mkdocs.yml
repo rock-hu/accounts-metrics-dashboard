@@ -1,0 +1,21 @@
+ame: mkdocs
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "docs/*.md"
+      - ".github/workflows/mkdocs.yml"
+      - "mkdocs.yml"
+      - "requirements.txt"
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: mkdocs build
+        run: mkdocs build
+      - name: mkdocs gh-deploy
+        run: mkdocs gh-deploy
